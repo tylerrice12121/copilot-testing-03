@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
@@ -152,6 +154,10 @@ export default function Home() {
               Built with modern web technologies for optimal performance and user experience.
             </p>
             <div className="flex justify-center space-x-6">
+              <Link href="/date"
+                 className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
+                Date Page
+              </Link>
               <a href="https://nextjs.org" target="_blank" rel="noopener noreferrer" 
                  className="text-gray-600 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
                 Next.js
