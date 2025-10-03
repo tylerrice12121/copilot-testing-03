@@ -20,6 +20,32 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Testing
+
+This project uses Jest and React Testing Library for testing.
+
+### Run Tests
+
+```bash
+# Run all tests
+npm test
+
+# Run tests in watch mode
+npm run test:watch
+
+# Run tests with coverage report
+npm run test:coverage
+```
+
+### Test Coverage
+
+The project currently has 100% test coverage across all components:
+- Home page component (`src/app/page.tsx`)
+- Date page component (`src/app/date/page.tsx`)
+- Layout component (`src/app/layout.tsx`)
+
+Coverage reports are generated in the `coverage/` directory when running `npm run test:coverage`.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
